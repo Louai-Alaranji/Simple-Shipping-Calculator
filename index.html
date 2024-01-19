@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping</p>
+    <p>Orders over $40 = Free Shipping!</p>
+    <p class="js-sum"></p>
+
+    <p> <!-- onkeydown is associated with input fields, not buttons-->
+        <input placeholder="input a number" type="number" class = "js-number-field"
+        onkeydown="if(event.key == 'Enter') { calculate(); }">
+
+        <button onclick="calculate();">
+        calculate
+        </button>
+        
+    </p>
+</body>
+<script src="script.js"></script>
+</html>
